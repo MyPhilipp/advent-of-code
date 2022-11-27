@@ -18,7 +18,6 @@ def depthIncrease(sonar_sweep: list[int]) -> int:
 
 
 if __name__ == "__main__":
-    with open('depthIncrease.input', 'r') as fh:
-        sonar_sweep = [int(depth) for depth in fh.read().split()]
-        print('Test answer for input: ', depthIncrease(sonar_sweep))
-    
+    from importIntList import importIntList
+    sonar_sweep = importIntList('depthIncrease.input')
+    print('Test answer for input: ', depthIncrease(sonar_sweep))
